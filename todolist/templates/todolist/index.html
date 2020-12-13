@@ -1,37 +1,28 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name ="description" content="Javascript calculator" />
-    <link rel="stylesheet" href="{% static 'todolist/myStyles.css' %}"  type="text/css">
-    <title>calculator</title>
+    <meta charset="utf-8">
+    <meta name="description" content="javascript calculator" />
+    <meta name="viewport" content="width=device-width,initial-scale=" 1>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+
+    <title>todolist</title>
 </head>
 <body>
-    <h1  style="text-align:center ; font-size:50px">BASIC CALCULATOR</h1>
-    <form id="myform" Name="calc">
-        <input id="display"> <br/>
-        <input type = button value="1" onclick="calc.display.value+='1'">
-        <input type = button value="2" onclick="calc.display.value+='2'">
-        <input type = button value="3" onclick="calc.display.value+='3'">
-        <input type = button value="&#247" onclick="calc.display.value+='/'" style="background-color:green"><br/>
+    <div id="mainbox">
+        <h1>What to do Today </h1>
+        <input type="text" placeholder="Enter todo Ex: Wash my car">
+        <button class="add">ADD</button>
+        <button class ="del" id="delcom">DELETE COMPLETED</button>
+        <button class ="del" id="delall">DELETE ALL</button>
 
-        <input type = button value="4" onclick="calc.display.value+='4'">
-        <input type = button value="5" onclick="calc.display.value+='5'">
-        <input type = button value="6" onclick="calc.display.value+='6'">
-        <input type = button value="x" onclick="calc.display.value+='*'" style="background-color:skyblue"><br/>
-
-        <input type = button value="7" onclick="calc.display.value+='7'">
-        <input type = button value="8" onclick="calc.display.value+='8'">
-        <input type = button value="9" onclick="calc.display.value+='9'">
-        <input type = button value="-" onclick="calc.display.value+='-'" style="background-color:cyan"><br/>
-
-        <input type = button value="C" onclick="calc.display.value=''"" style="background-color:rgb(10, 6, 238)">
-        <input type = button value="0" onclick="calc.display.value+='0'">
-        <input type = button value="+" onclick="calc.display.value+='+'" style="background-color:darkorchid">
-        <input type = button value="=" onclick="calc.display.value=eval(calc.display.value)" style="background-color:springgreen" ><br/>
-    </form>
+        <ul style="background: none;">
+            <li>wash the car</li>
+            <li>shop the vegetable</li>
+        </ul>
+       
+    </div>
     
 </body>
 </html>
